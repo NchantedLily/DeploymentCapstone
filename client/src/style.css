@@ -1,0 +1,17 @@
+body{
+    /* background: linear-gradient(210deg, #565656, #ababab, #ffffff, #ababab); */
+    color:#565656;
+}
+
+img{
+    width: 350px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
