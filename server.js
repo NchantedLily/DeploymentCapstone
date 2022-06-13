@@ -29,11 +29,13 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const lateNightBrewRouter = require('./routes/lateNightBrewPlace');
 const foodRouter = require('./routes/foodRestaurant');
-
+const eventRouter = require('./routes/eventRoutes');
+const historyRouter = require('./routes/historyRoutes');
 
 app.use('/brew', lateNightBrewRouter);
 app.use('/food', foodRouter);
-
+app.use('/events', eventRouter);
+app.use('/historical', historyRouter);
 
 
 app.listen(port, () =>{
