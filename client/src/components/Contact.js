@@ -1,13 +1,15 @@
 import React from 'react'
-// import "../foodbrew.css";
+import "../index.css";
 
 const Contact = () => {
   return (
-    <section class="bottom">
+    <section class="bottom ramen">
     <header>
         <h1 class="logo">Visit Cincinnati</h1>
         <div class="toggle"></div>
     </header>
+<body className="cheetos">
+  
 
    <div className="contact">
   <h2>Contact Us</h2>
@@ -30,12 +32,12 @@ const Contact = () => {
     </div>
     <button type="submit" className="btn btn-secondary">Submit</button>
   </form>
-  <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" title="atlistmapofcincy" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 </div>
 
+</body>
 </section>
-
 
 
 

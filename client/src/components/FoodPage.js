@@ -1,20 +1,24 @@
+
+
 import React, { Component } from 'react';
 import axios from 'axios';
-// import "../foodbrew.css";
+import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 
 const Food = props => (
-<div className="card" style={{width: '18rem'}}>
+  <div className="container">
+  <div className="chili">
+<div className="card city" style={{width: '18rem'}}>
   <img src={props.food.imageURL} className='card-img-top'  alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{props.food.title}</h5>
     <p className="card-text">{props.food.description}</p>
     <a href="#" className="btn btn-primary">{props.food.title}</a>
+    </div>
   </div>
 </div>
-
-
+</div>
  
 
   

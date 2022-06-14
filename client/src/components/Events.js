@@ -5,6 +5,8 @@ import axios from 'axios';
 // import {BACKEND_URL} from '../config'
 
 const Event = (props) => (
+   <body className="cheetos">
+    
    
     <div className="c6">
     <div className="flip-card">
@@ -19,7 +21,7 @@ const Event = (props) => (
       </div>
     </div>
   </div>
-  
+  </body>
 )
 
 export default class Events extends Component {
@@ -52,6 +54,4 @@ export default class Events extends Component {
 );
 }
 }
-
-
 
