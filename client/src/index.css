@@ -348,6 +348,10 @@ h2{
   font-style: italic;
 }
 
+.card{
+  height: 600px !important;
+
+}
 
 .logo{
   width: 100%;

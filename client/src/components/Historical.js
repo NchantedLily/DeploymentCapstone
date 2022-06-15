@@ -5,7 +5,7 @@ import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 const History = (props) => (
-<body className='cheetos historicalContainer'>
+<body className='historicalContainer'>
   <div className="eventc6">
     <div className="flip-card">
       <div className="flip-card-inner">
@@ -20,7 +20,6 @@ const History = (props) => (
     </div>
   </div>  
 </body>
-
 
 )
 

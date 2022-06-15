@@ -10,11 +10,11 @@ const Brew = props => (
   <div className="col-md-4">
     <img src={props.brew.imageURL} className="img-fluid rounded-start" alt="..." />
   </div>
-  <div className="">
+  <div className="nuggets">
     <div className="card-body">
       <h5 className="card-title">{props.brew.title}</h5>
       <p className="card-text">{props.brew.description}</p>
-      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+      <p className="card-text"><small className="text-muted"></small></p>
     </div>
   </div>
 </div>
@@ -73,9 +73,11 @@ export default class Brews extends Component {
  
      
       
-      <div className="bodyody">
-           { this.BrewsList()  }
-                </div>
-);
-}
-}
+      <div className="container">
+      <div className="row">
+               { this.BrewsList()  }
+                    </div>
+                    </div>
+    );
+    }
+    }

@@ -10,7 +10,6 @@ const About = () => {
         <h1 class="logo">About Cincinnati</h1>
         <div class="toggle"></div>
     </header>
- <body className="cheetos">
    <div className="card grippos">
   <div className="card-body">
     <h5 className="card-title"></h5>
@@ -21,7 +20,6 @@ const About = () => {
 </div>
 
 <footer></footer>
-</body>
 </section>
 
 

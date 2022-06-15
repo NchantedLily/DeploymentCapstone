@@ -1,7 +1,9 @@
-var NewComponent = React.createClass({
-  render: function() {
-    return (
-      <div>
+import React from 'react'
+
+const Home = () => {
+  return (
+    <div>
+         <div>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,6 +74,8 @@ var NewComponent = React.createClass({
             </div>
           </div></section>
       </div>
-    );
-  }
-});
+    </div>
+  )
+}
+
+export default Home
