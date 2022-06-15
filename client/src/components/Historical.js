@@ -5,9 +5,8 @@ import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 const History = (props) => (
-
-
-<div className="eventc6">
+<body className='cheetos historicalContainer'>
+  <div className="eventc6">
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
@@ -20,6 +19,9 @@ const History = (props) => (
       </div>
     </div>
   </div>  
+</body>
+
+
 )
 
 export default class Histories extends Component {
