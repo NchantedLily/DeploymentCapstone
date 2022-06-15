@@ -7,6 +7,8 @@ import "../index.css";
 const History = (props) => (
 
 
+  
+
 <div className="c6">
     <div className="flip-card">
       <div className="flip-card-inner">

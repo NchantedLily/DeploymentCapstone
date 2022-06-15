@@ -7,18 +7,23 @@ import "../index.css";
 
 
 const Food = props => (
-  <div className="container">
-  <div className="chili">
-<div className="card city" style={{width: '18rem'}}>
-  <img src={props.food.imageURL} className='card-img-top'  alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">{props.food.title}</h5>
-    <p className="card-text">{props.food.description}</p>
-    <a href="#" className="btn btn-primary">{props.food.title}</a>
+
+    
+    <div className="card mb-3 col-3 logo" style={{maxWidth: 540}}>
+  <div className="row g-0">
+    <div className="col-md-4">
+      <img src={props.food.imageURL} className="img-fluid rounded-start" alt="..." />
+    </div>
+    <div className="">
+      <div className="card-body">
+        <h5 className="card-title">{props.food.title}</h5>
+        <p className="card-text">{props.food.description}</p>
+        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
   </div>
 </div>
-</div>
+
  
 
   
@@ -54,8 +59,10 @@ export default class Foods extends Component {
  
      
       
-      <div className="bodyody">
+      <div className="container">
+  <div className="row">
            { this.FoodsList()  }
+                </div>
                 </div>
 );
 }

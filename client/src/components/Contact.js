@@ -8,12 +8,12 @@ const Contact = () => {
         <h1 class="logo">Visit Cincinnati</h1>
         <div class="toggle"></div>
     </header>
-<body className="cheetos">
+
   
 
    <div className="contact">
-  <h2>Contact Us</h2>
-  <form>
+  <h2 className='sausage'>Contact Us</h2>
+  <form className='boba'>
     <div className="form-group">
       <label htmlFor="exampleInputEmail1">Email address</label>
       <input type="email" className="form-control" id="exampleInputEmail" aria-describedby="emailHelp" />
@@ -35,8 +35,7 @@ const Contact = () => {
   <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" title="atlistmapofcincy" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 </div>
-
-</body>
+<footer></footer>
 </section>
 
 
