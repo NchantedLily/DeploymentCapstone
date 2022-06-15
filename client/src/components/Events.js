@@ -5,18 +5,18 @@ import axios from 'axios';
 // import {BACKEND_URL} from '../config'
 
 const Event = (props) => (
-   <body className="cheetos">
+<body className="cheetos ">
     
    
-    <div className="c6">
+  <div className="historicalc6">
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src={props.event.imageURL}alt="Renaissance Festival" />
+          <img className='eventImage' src={props.event.imageURL}alt="Event Image" />
         </div>
         <div className="flip-card-back">
-          <h3 className="first-txt">{props.event.title}</h3>
-          <p className="second-txt glass alignT">{props.event.description}</p>
+          <h3 className="eventFirst-txt">{props.event.title}</h3>
+          <p className="eventSecond-txt eventGlass">{props.event.description}</p>
         </div>
       </div>
     </div>
