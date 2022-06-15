@@ -36,6 +36,7 @@ export default class App extends Component {
         <Route path='/historical' component={Histories} />
 
       </Router>
+      <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
     </div>
   );
 }

@@ -5,23 +5,23 @@ import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 const History = (props) => (
-
-
-  
-
-<div className="c6">
+<body className='cheetos historicalContainer'>
+  <div className="eventc6">
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src={props.historical.imageURL}alt="Renaissance Festival" />
+          <img className='historicalImage' src={props.historical.imageURL}alt="Renaissance Festival" />
         </div>
         <div className="flip-card-back">
-          <h3 className="first-txt">{props.historical.title}</h3>
-          <p className="second-txt glass alignT">{props.historical.description}</p>
+          <h3 className="historicalFirst-txt">{props.historical.title}</h3>
+          <p className="historicalSecond-txt historicalGlass">{props.historical.description}</p>
         </div>
       </div>
     </div>
   </div>  
+</body>
+
+
 )
 
 export default class Histories extends Component {
