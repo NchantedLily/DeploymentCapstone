@@ -32,7 +32,7 @@ const Contact = () => {
     </div>
     <button type="submit" className="btn btn-secondary">Submit</button>
   </form>
-  <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" title="atlistmapofcincy" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  {/*<iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" title="atlistmapofcincy" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>*/}
 
 </div>
 <footer></footer>

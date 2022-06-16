@@ -3,14 +3,17 @@ import axios from 'axios';
 import "../index.css";
 // import {BACKEND_URL} from '../config'
 const Brew = props => (
-
+  
+  
  
-<div className="card mb-3 col-3 logo" style={{maxWidth: 540}}>
+  
+  <div className="card mb-3 col-3 logo" style={{maxWidth: 540}}>
 <div className="row g-0">
   <div className="col-md-4">
     <img src={props.brew.imageURL} className="img-fluid rounded-start" alt="..." />
   </div>
   <div className="nuggets">
+  <h1 className="salsa">Late Night and Breweries</h1>
     <div className="card-body">
       <h5 className="card-title">{props.brew.title}</h5>
       <p className="card-text">{props.brew.description}</p>
@@ -71,9 +74,8 @@ export default class Brews extends Component {
     return (
 
  
-     
       
-      <div className="container">
+      <div className="container1">
       <div className="row">
                { this.BrewsList()  }
                     </div>
