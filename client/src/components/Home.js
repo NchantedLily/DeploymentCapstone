@@ -8,6 +8,7 @@ import Aqua from '../img/Aquarium.jpg';
 import Ut from '../img/ut.jpg';
 import Nati from '../img/cincy2.jpg';
 import Pontiac from '../img/pontiac.jpg';
+import Footer from "./Footer";
 
 
 

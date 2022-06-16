@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import BrewPage from './components/BrewPage';
+// import BrewPage from './components/BrewPage';
 import Home from './components/Home';
-import FoodPage from './components/FoodPage';
+// import FoodPage from './components/FoodPage';
 // Page & Component Imports
 import Navbar from './components/Navbar'
 import About from './components/About';
 import Contact from './components/Contact'
 import Events from './components/Events';
 import Attractions from './components/Attractions';
-import Histories from './components/Historical';
+import Footer from "./components/Footer";
 import Foods from './components/FoodPage';
 import Brews from './components/BrewPage';
-
-
-
+import Histories from './components/Historical'
 
 // styles
 import './style.css';
@@ -35,10 +33,10 @@ export default class App extends Component {
         <Route path='/events' component={Events} />
         <Route path='/historical' component={Histories} />
         <Route path='/attractions' component={Attractions} />
-
+    <Footer/>
 
       </Router>
-      <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      
     </div>
   );
 }
