@@ -9,7 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact'
 import Events from './components/Events';
 import Attractions from './components/Attractions';
-
+import Footer from "./components/Footer";
 
 
 
@@ -35,10 +35,10 @@ export default class App extends Component {
         <Route path='/events' component={Events} />
         <Route path='/historical' component={Histories} />
         <Route path='/attractions' component={Attractions} />
-
+    <Footer/>
 
       </Router>
-      <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      
     </div>
   );
 }

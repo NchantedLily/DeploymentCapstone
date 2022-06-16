@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import "../attractions.css";
 import Avatar from "../img/Riverboat.jpg";
 import PBS from "../img/PBS.jpg";
 import Reds from "../img/reds.jpg";
@@ -19,12 +18,12 @@ import Arono from "../img/Aronoff.jpg";
 import Ic from "../img/Icon.jpg";
 import Findlay from "../img/findlaymarket.jpg";
 import Music from "../img/Musichall.jpg";
-import Square from "/img/fountainsquare.jpg";
-import Blink from "/img/blink1.jpg";
-import Sign from "/img/signmuseum.jpg";
-import Train from "/img/train.jpg";
-import Rail from "/img/Railroad.jpg";
-import Jim from "/img/junglejim2.jpg";
+import Square from "../img/fountainsquare.jpg";
+import Blink from "../img/blink1.jpg";
+import Sign from "../img/signmuseum.jpg";
+import Train from "../img/train.jpg";
+import Rail from "../img/Railroad.jpg";
+import Jim from "../img/junglejim2.jpg";
 
 
 

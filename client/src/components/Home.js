@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from 'react';
-import axios from 'axios';
-import "../index.css";
-
-var NewComponent = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Video</title>
-        <link rel="stylesheet" href="home.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous" />
-=======
 import React from 'react'
 import "../home.css"
 import "../index.css"
@@ -24,6 +8,7 @@ import Aqua from '../img/Aquarium.jpg';
 import Ut from '../img/ut.jpg';
 import Nati from '../img/cincy2.jpg';
 import Pontiac from '../img/pontiac.jpg';
+import Footer from "./Footer";
 
 
 
@@ -33,7 +18,6 @@ const Home = () => {
     <div>
          <div>
          
->>>>>>> 174d31e6160bef9e9b9bedafe3c97219199bd510
         <section className="showcase">
           <video src={Bluewall} muted loop autoPlay />
           <div className="overlay">
