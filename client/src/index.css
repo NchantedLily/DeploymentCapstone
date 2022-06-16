@@ -40,9 +40,10 @@ text-align: center;
 .eventFirst-txt {
   position:relative;
   top: 25px;
-  left: 200px;
+  /* left: 200px; */
   width: 220px;
   color:black;
+  margin:auto;
   text-align: center;
 
 
@@ -58,9 +59,8 @@ border: 1px solid rgba(255, 255, 255, 0.16);
 
 .eventSecond-txt{
   position: relative;
-  left: 25px;
   bottom: -65px;
-  width: 550px;
+  width:auto;
   color: black;
 
   
@@ -78,18 +78,32 @@ border: 1px solid rgba(255, 255, 255, 0.16);
 .eventc6 {
   float: left;
   width: 50%;
+  margin-right: 100px
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
    background-color: transparent;
    width: 600px;
-   height: 315px;
+   height: 300px;
+   font-size: 10px;
+   color:#565656;
+   text-shadow:#ffffff;
+}
+
+.flip-card1 {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  margin: 50px;
+   perspective: 1000px; /*Remove this if you don't want the 3D effect */
+}
+
    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /*Remove this if you don't want the 3D effect */
+     /*Remove this if you don't want the 3D effect */
    /* margin: 10px; */
    
-  }
+  
   
   /* This container is needed to position the front and back side */
   .flip-card-inner {
@@ -100,14 +114,40 @@ border: 1px solid rgba(255, 255, 255, 0.16);
    transition: transform 0.8s;
    transform-style: preserve-3d;
   }
+  .flip-card-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 32px -1px rgba(0, 0, 0, 0.9);
+    
+  }
+
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
    transform: rotateY(180deg);
   }
+  .flip-card1:hover .flip-card-inner1 {
+   
+      transform: rotateY(180deg);
+      cursor: pointer;
+      box-shadow: 0px 0px 32px -1px rgba(0, 0, 0, 0.9);
+    }
+  
+  
   
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 600px;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+  }
+  .flip-card-front1, .flip-card-back1 {
    position: absolute;
    width: 100%;
    height: 100%;
@@ -127,7 +167,16 @@ border: 1px solid rgba(255, 255, 255, 0.16);
    color: black;
    transform: rotateY(180deg);
    box-shadow: 5px 5px 10px;
+   background-size: 100%;
+   width:600px;
   }
+  .flip-card-back1 {
+
+    background-image: radial-gradient(circle, #d3d3d3, #c5c5c5, #b8b8b8, #ababab, #9e9e9e);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
   /* end event.css */
 
   /* historical CSS */
@@ -176,14 +225,7 @@ border: 1px solid rgba(255, 255, 255, 0.16);
   }
   
   /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
+
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #bbb;
@@ -191,12 +233,12 @@ border: 1px solid rgba(255, 255, 255, 0.16);
   }
   
   /* Style the back side */
-  .flip-card-back {
+  /* .flip-card-back {
     background-image: url('./img/CincinnatiFlag_adobe_express.png');
     color: black;
     transform: rotateY(180deg);
     box-shadow: 5px 5px 10px;
-  }
+  } */
 
 
   .historicalGlass {   
@@ -241,8 +283,10 @@ border: 1px solid rgba(255, 255, 255, 0.16);
     } 
 
     .historicalc6 {
-     float: left;
-     width: 50%; 
+     float:left;
+
+     width:fit-content;
+     margin-left:-50px; 
     }
     
 
@@ -631,20 +675,17 @@ background-image: linear-gradient(to left top, #c0a788, #ccb69a, #d7c5ad, #e3d4c
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateX(-20%);
   cursor: pointer;
   box-shadow: 0px 0px 32px -1px rgba(0, 0, 0, 0.9);
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+/* .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-
-}
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
@@ -653,11 +694,7 @@ background-image: linear-gradient(to left top, #c0a788, #ccb69a, #d7c5ad, #e3d4c
 }
 
 /* Style the back side */
-.flip-card-back {
-  background-image: radial-gradient(circle, #d3d3d3, #c5c5c5, #b8b8b8, #ababab, #9e9e9e);
-  color: white;
-  transform: rotateY(180deg);
-}
+
 
 /* Button on Cards  */
 .a {
@@ -714,8 +751,8 @@ a:hover, a:active {
 }
 
 /* Link Page */
-.fa-house {
-  background-image: linear-gradient(to right top, #c0a788, #ccb69a, #d7c5ad, #e3d4c0, #efe3d4, #f0e9db, #f2eee2, #f5f3ea, #eeefe7, #e8eae5, #e3e5e2, #dfe0df);
+.fa-home {
+background:red;
   color: white;
 }
 

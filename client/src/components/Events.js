@@ -1,14 +1,13 @@
 //import React from 'react';
 import React, { Component } from 'react';
 import axios from 'axios';
-// import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 const Event = (props) => (
-<body className="eventContainer ">
+<div className="eventContainer ">
     
    
-  <div className="historicalc6">
+  <div className="eventc6">
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
@@ -21,7 +20,7 @@ const Event = (props) => (
       </div>
     </div>
   </div>
-  </body>
+  </div>
 )
 
 export default class Events extends Component {
@@ -48,8 +47,11 @@ export default class Events extends Component {
   }
   render() {
     return (
-      <div className="">
+      <div className="container">
+      <div className="row d-flex flex-wrap">
+
            { this.EventsList()  }
+      </div>
                 </div>
 );
 }
