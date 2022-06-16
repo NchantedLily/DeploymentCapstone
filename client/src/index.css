@@ -235,6 +235,7 @@ border: 1px solid rgba(255, 255, 255, 0.16);
   /* Style the back side */
   /* .flip-card-back {
     background-image: url('./img/CincinnatiFlag_adobe_express.png');
+    width: 600px;
     color: black;
     transform: rotateY(180deg);
     box-shadow: 5px 5px 10px;

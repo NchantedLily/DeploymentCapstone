@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import BrewPage from './components/BrewPage';
+// import BrewPage from './components/BrewPage';
 import Home from './components/Home';
-import FoodPage from './components/FoodPage';
+// import FoodPage from './components/FoodPage';
 // Page & Component Imports
 import Navbar from './components/Navbar'
 import About from './components/About';
@@ -10,15 +10,13 @@ import Contact from './components/Contact'
 import Events from './components/Events';
 import Attractions from './components/Attractions';
 import Footer from "./components/Footer";
-
-
-
+import Foods from './components/FoodPage';
+import Brews from './components/BrewPage';
+import Histories from './components/Historical'
 
 // styles
 import './style.css';
-import Histories from './components/Historical';
-import Foods from './components/FoodPage';
-import Brews from './components/BrewPage';
+
 
 
 export default class App extends Component {
