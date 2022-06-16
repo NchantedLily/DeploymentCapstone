@@ -1,3 +1,7 @@
+import React, { Component } from 'react';
+import axios from 'axios';
+import "../index.css";
+
 var NewComponent = React.createClass({
   render: function() {
     return (
