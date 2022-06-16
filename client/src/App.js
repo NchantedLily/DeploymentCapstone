@@ -7,9 +7,8 @@ import FoodPage from './components/FoodPage';
 import Navbar from './components/Navbar'
 import About from './components/About';
 import Contact from './components/Contact'
-import Historical from './components/Historical';
 import Events from './components/Events';
-
+import Attractions from './components/Attractions';
 
 
 
@@ -17,6 +16,9 @@ import Events from './components/Events';
 
 // styles
 import './style.css';
+import Histories from './components/Historical';
+import Foods from './components/FoodPage';
+import Brews from './components/BrewPage';
 
 
 export default class App extends Component {
@@ -28,10 +30,12 @@ export default class App extends Component {
         <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>
         <Route path='/Contact' component={Contact}/> 
-        <Route path='/food' component={FoodPage} />
-        <Route path='/brew' component={BrewPage} />
+        <Route path='/food' component={Foods} />
+        <Route path='/brew' component={Brews} />
         <Route path='/events' component={Events} />
-        <Route path='/historical' component={Historical} />
+        <Route path='/historical' component={Histories} />
+        <Route path='/attractions' component={Attractions} />
+
 
       </Router>
       <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>

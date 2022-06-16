@@ -1,12 +1,47 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React, { Component } from 'react';
+import axios from 'axios';
+import "../attractions.css";
+import Avatar from "../img/Riverboat.jpg";
+import PBS from "../img/PBS.jpg";
+import Reds from "../img/reds.jpg";
+import TQL from "../img/tql.jpg";
+import Hockey from "../img/hockey.jpeg";
+import Ault from "../img/aultpark.jpg";
+import Eden from "../img/edenpark.jpg";
+import Smale from "../img/smale.jpg";
+import Mtair from "../img/mtairy.jpg";
+import PHill from "../img/phill.jpg";
+import Wash from "../img/washington2.jpg";
+import Ut from "../img/ut.jpg";
+import Artm from "../img/artmuseum.jpg";
+import Boga from "../img/bogarts.jpg";
+import Arono from "../img/Aronoff.jpg";
+import Ic from "../img/Icon.jpg";
+import Findlay from "../img/findlaymarket.jpg";
+import Music from "../img/Musichall.jpg";
+import Square from "/img/fountainsquare.jpg";
+import Blink from "/img/blink1.jpg";
+import Sign from "/img/signmuseum.jpg";
+import Train from "/img/train.jpg";
+import Rail from "/img/Railroad.jpg";
+import Jim from "/img/junglejim2.jpg";
+
+
+
+
+
+
+const Attractions = () => {
+
+{/*var NewComponent = React.createClass({*/}
+    {/*render() {*/}
       return (
         <div>
-          <meta charSet="UTF-8" />
+         {/*  <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Document</title>
-          <link rel="stylesheet" href="attractions.css" />
+          <title>Document</title>/}
+          {/*<link rel="stylesheet" href="attractions.css"*/}
           {/*NAV BAR*/}
           <div className="nav">
             <input type="checkbox" id="nav-check" />
@@ -36,13 +71,13 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/PBS.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={PBS} alt="PBS" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <div className="text-block">
                         <h1>Cincinnati Bengals</h1>
                         <p>Founded in 1967, by Paul Brown! <br /> Games are usually from September to January!</p>
-                        <a href="https://www.facebook.com/bengals/" className="fa fa-facebook" />
+                        <a href={"https://www.facebook.com/bengals/"} className="fa fa-facebook" />
                         <a href="https://www.bengals.com/" className="fa fa-house" /> 
                         <a href="https://twitter.com/Bengals?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" className="fa fa-twitter" /><a />
                       </div>
@@ -53,7 +88,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/reds.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Reds} alt="Reds" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Cincinnati Reds</h1>
@@ -68,7 +103,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/TQL.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={TQL} alt="TQL" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>FC Cincinnati</h1>
@@ -83,7 +118,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/hockey.jpeg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Hockey} alt="Hockey" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Cincinnati Cyclones</h1>
@@ -99,7 +134,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/aultpark.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Ault} alt="Ault" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Ault Park</h1>
@@ -113,7 +148,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/edenpark.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Eden} alt="Eden" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Eden Park</h1>
@@ -126,7 +161,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/smale.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Smale} alt="Smale" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Smale Park</h1>
@@ -140,7 +175,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/mtairy.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Mtair} alt="Mtair" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Mt Airy</h1>
@@ -155,7 +190,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/phill.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={PHill} alt="PHill" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1 className="bigtext">Washington Park</h1>
@@ -170,7 +205,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/washington2.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Wash} alt="Wash" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Washington Park</h1>
@@ -185,7 +220,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/ut.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Ut} alt="Ut" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Union Terminal</h1>
@@ -199,7 +234,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/artmuseum.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Artm} alt="Artm" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Art Museum</h1>
@@ -218,7 +253,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/bogarts.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Boga} alt="Boga" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <div className="text-block">
@@ -235,7 +270,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/Musichall.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Music} alt="Music" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Music Hall</h1>
@@ -250,11 +285,11 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/Aronoff.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Arono} alt="Arono" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Aronoff Center</h1>
-                      <p>Designed by internationally renowned architect Cesar Pelli, the dramatic glass, stainless steel, and brick facades are a vibrant modern counterpoint to its surrounding buildings. The Aronoff is home to numerous resident companies including Fifth Third Bank Broadway in Cincinnati presented by TriHealth, Cincinnati Ballet, Cincinnati Music Theatre, Cincinnati Playwrights Initiative, Contemporary Dance Theater, Exhale Dance Tribe, Mutual Dance Theatre, and Revolution Dance Theatre. </p>
+                      <p> The Aronoff is home to numerous resident companies including Fifth Third Bank Broadway in Cincinnati presented by TriHealth, Cincinnati Ballet, Cincinnati Music Theatre, Cincinnati Playwrights Initiative, Contemporary Dance Theater, Exhale Dance Tribe, Mutual Dance Theatre, and Revolution Dance Theatre. </p>
                       <a href="https://www.facebook.com/aronoffcenter/" className="fa fa-facebook" />
                       <a href=" https://www.cincinnatiarts.org/aronoff-center-home" className="fa fa-house" /> 
                       <a href="https://mobile.twitter.com/aronoffcenter" className="fa fa-twitter" />
@@ -265,7 +300,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/Icon.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Ic} alt="Ic" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Icon Music Center</h1>
@@ -280,7 +315,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/findlaymarket.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Findlay} alt="Findlay" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Findlay Market</h1>
@@ -294,7 +329,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/fountainsquare.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Square} alt="Avatar" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Fountain Square</h1>
@@ -308,7 +343,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/blink1.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Blink} alt="Avatar" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Blink Festival</h1>
@@ -322,7 +357,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/signmuseum.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Sign} alt="Avatar" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>American Sign Museum</h1>
@@ -336,7 +371,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/train.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Train} alt="Avatar" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1 className="bigtext">Washington Park</h1>
@@ -349,7 +384,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/Railroad.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Rail} alt="Avatar" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>National Underground Railroad Freedom Center</h1>
@@ -361,7 +396,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/junglejim2.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Jim} alt="Avatar" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>Jungle Jim's</h1>
@@ -375,7 +410,7 @@ var NewComponent = React.createClass({
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <img src="/img/Riverboat.jpg" alt="Avatar" style={{width: '500px', height: '300px'}} />
+                      <img src={Avatar} alt="Avatar" style={{width: '500px', height: '300px'}} />
                     </div>
                     <div className="flip-card-back">
                       <h1>BB Riverboats</h1>
@@ -394,35 +429,11 @@ var NewComponent = React.createClass({
                 <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" allow="geolocation" width="100%" height="400px" frameBorder={0} scrolling="no" allowFullScreen />
               </div>
             </section>
-            <footer>
-              <div className="footer-home">
-                <div className="footer-info">
-                  <div className="footer-capstone-info">
-                    <h3>Capstone</h3>
-                    <p>
-                      This was made using React 
-                    </p>
-                  </div>
-                  <div className="footer-personal-info">
-                    <h3>Ben Ringer</h3>
-                    <a href="https://github.com/BenRinger" rel="noreferrer" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/ben-ringer/" rel="noreferrer" target="_blank">LinkedIn</a>
-                  </div>
-                  <div className="footer-personal-info">
-                    <h3>Tre Griffin</h3>
-                    <a href="https://github.com/ltgriff" rel="noreferrer" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/lawrence-tre-griffin-84a0a544/" rel="noreferrer" target="_blank">LinkedIn</a>
-                  </div>
-                  <div className="footer-personal-info">
-                    <h3>Martia Turner</h3>
-                    <a href="https://github.com/NchantedLily" rel="noreferrer" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/martia-turner-30b1295a/" rel="noreferrer" target="_blank">LinkedIn</a>
-                  </div>
-                  {/* <img src="/img/Cincyskyline.png" alt="" style=" width:2525px; height:300px;"> */}
-                </div>      
-              </div>
-            </footer>
-          </div></div>
+            <footer></footer>
+          </div>
+          </div>
       );
     }
-  });
+  
+
+  export default Attractions;

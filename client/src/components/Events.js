@@ -5,7 +5,7 @@ import axios from 'axios';
 // import {BACKEND_URL} from '../config'
 
 const Event = (props) => (
-<body className="cheetos eventContainer ">
+<body className="eventContainer ">
     
    
   <div className="historicalc6">
