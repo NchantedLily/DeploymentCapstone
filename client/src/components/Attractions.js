@@ -425,7 +425,7 @@ const Attractions = () => {
             <section>
               {/* MAP */}
               <div className="Map">
-                <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" allow="geolocation" width="100%" height="400px" frameBorder={0} scrolling="no" allowFullScreen />
+              <iframe src="https://my.atlistmaps.com/map/b026416f-080d-4b84-8317-c40e8cb416f1?share=true" title="atlistmapofcincy" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
               </div>
             </section>
             <footer></footer>
