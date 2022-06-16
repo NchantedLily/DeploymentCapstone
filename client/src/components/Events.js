@@ -1,14 +1,13 @@
 //import React from 'react';
 import React, { Component } from 'react';
 import axios from 'axios';
-// import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 const Event = (props) => (
 <body className="eventContainer ">
     
    
-  <div className="historicalc6">
+  <div className="eventc6">
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">

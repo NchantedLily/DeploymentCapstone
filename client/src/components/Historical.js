@@ -1,12 +1,11 @@
 //import React from 'react'
 import React, { Component } from 'react';
 import axios from 'axios';
-import "../index.css";
 // import {BACKEND_URL} from '../config'
 
 const History = (props) => (
 <body className='historicalContainer'>
-  <div className="eventc6">
+  <div className="historicalc6">
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">

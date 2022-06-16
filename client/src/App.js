@@ -9,16 +9,16 @@ import About from './components/About';
 import Contact from './components/Contact'
 import Events from './components/Events';
 import Attractions from './components/Attractions';
-
+import Histories from './components/Historical';
+import Foods from './components/FoodPage';
+import Brews from './components/BrewPage';
 
 
 
 
 // styles
 import './style.css';
-import Histories from './components/Historical';
-import Foods from './components/FoodPage';
-import Brews from './components/BrewPage';
+
 
 
 export default class App extends Component {
